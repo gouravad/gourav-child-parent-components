@@ -1,6 +1,6 @@
 
 
-Vue.component('parentcomponent', {
+const parent=  {
 	data() {
 		return { 
 			fontSize:20,
@@ -25,12 +25,12 @@ Vue.component('parentcomponent', {
 		<span>{{fontSize}}px</h1>
 		<button @click="increaseFont">Increase Font Size</button> 
 		<h1>Present Color = <span> Color</span> is {{color}}</h1>  
-		<childcomponent :fontSize="fontSize" @changeColor="changeColor($event)" :color="color" ></childcomponent>
+		<child :fontSize="fontSize" @changeColor="changeColor($event)" :color="color" ></child>
 	</div>
 	
 	
 	`,
  
-});
+};
  
  

@@ -1,5 +1,5 @@
 
-Vue.component('childcomponent', {
+const child= {
     data() {
 		return { 
 			color:'none',
@@ -23,7 +23,7 @@ Vue.component('childcomponent', {
         <h1 :style="{color:color}">{{color}}</h1>
 	</div>`,
  
-});
+};
 
 //:style="{color:color}
 
